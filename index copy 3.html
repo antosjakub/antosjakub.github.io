@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> My Page | Jakub Antos </title>
+        <style>
+            #tab {
+                width: 100%;
+                float: left;
+                background-color: black;
+                color: white;
+                font-size: 22px;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            #about_me {
+                text-align: center;
+                font-style: italic;
+                font-size: 18px;
+                margin-left: 500px;
+                margin-right: 500px;
+                margin-bottom: 50px;
+            }
+            #my_work {
+                width: 100%;
+                margin-top: 100px;
+            }
+            li {
+                list-style: circle;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;margin-top: 100px;">Jakub Antos</h1>
+        <h3 style="text-align: center;margin-bottom: 50px;">Bc. Student | Mathematical Modelling</h2>
+    <div>
+        <div id="about_me">Hi, my name is Jakub and I am currently in my final year of a bachelor's degree programme studying mathematical modelling within the Faculty of Mathematics and Physics at the Charles University in Prague.</div>
+        <h4 style="text-align: center;"><a href="images/my_cv.pdf" target="_blank">CV</a></h5>
+        <hr>
+
+        <div id="tab" style="margin-top: 10px;" onclick="toggle_hidden()" >Interests / Selected Work</div>
+
+        <div id="my_work" hidden="true">
+            <div id="linux" style="margin-top: 50px;">
+                <div style="text-align: center;"><h4>My configured linux setup.</h4></div>
+                <div style="display: inline-block;">
+                    <div>
+                    <img style="float: left; margin-left: 9.5%;" width="40%" src="images/linux_background_dwm.png" alt="My dwm config">
+                    <img style="float: right; margin-right: 9.5%;" width="40%" src="images/linux_background_qtile.png" alt="My qtile config">
+                    </div>
+                </div>
+            </div>
+            <div id="astronomy" style="margin-top: 50px;">
+                <div style="text-align: center;"><h4>Astronomy</h4></div>
+                <div style="display: inline-block; width: 100%;">
+                    <div>
+                    <img style="float:left; margin-left: 19.5%;" width="30%" src="images/hunt_for_planet9.gif" alt="I've taken a part in labeling data from ...">
+                    <div style="float: right; margin-right: 9.5%;" width="30%"><h4>Planet 9</h4></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; margin-top: 50px;">
+                <div style="float: left;width: 30%;">Fractal animation using the rising Julia programming language.</div>
+                <div style="float: right;width: 70%;"><img width="600px" src="images/anim_point.gif" alt="Fractal animation using Julia"></div>
+            </div>
+        </div>
+
+
+        <hr style="margin-top: 90px;">
+        
+        <footer hidden="true">
+        <div>
+        <h3 style="text-align: center;">Contact</h4>
+        <div>
+        <ul style="margin-top: 0px; margin-left: 45%;">
+            <li>antos_j@outlook.com</li>
+            <li><a href="https://github.com/antosjakub?tab=repositories">Github</a></li>
+        </ul>
+        </div>
+        </div>
+        </footer>
+
+
+    </div>
+    <script>
+        function toggle_hidden() {
+            document.getElementById("my_work").hidden = !document.getElementById("my_work").hidden;
+        }
+    </script>
+    </body>
+</html>
